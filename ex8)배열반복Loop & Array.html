@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop & Array</h1>
+    <script>
+        var coworkers=['인세현','김종환','장진우','한상우'];
+    </script>
+<!-- var의 매개체들을 배열 및 반복으로 리스트화 하는 법 -->
+    <h2>Co workers</h2>
+    <ul>
+        <script>
+            var i=0;
+            while(i<coworkers.length){
+            document.write('<li><a href="http://a.com/'+coworkers[i]+'">'+coworkers[i]+'</li>')
+            //'+coworkers[i]+'는 괄호 안의 값이 문자로 입력되는 것을 방지하고 함수로 인식되게끔 하는 작업 
+            i=i+1
+            }
+        </script>
+    </ul>
+</body>
+</html>

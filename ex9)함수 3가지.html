@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funtion</h1>
+    <h2>Basic</h2>
+    <ul>
+        <script>
+            function two(){
+                document.write('<li>2-1</li>');
+                document.write('<li>2-2</li>');    
+            }
+            document.write('<li>1</li>');
+            two();
+            document.write('<li>3</li>');
+            two();
+        </script>
+    </ul>
+    <h2>parameter & Argrument</h2>
+    <script>
+        function onePone(){
+            document.write(1+1+'<br>');
+        }
+        onePone();
+        function sum(left, right){
+            document.write(left+right+'<br>');
+        }
+        function sumColorRed(left, right){
+            document.write('<div style="color:red">'+(left+right)+'</div>')
+        }
+        sum(2,3);
+        sumColorRed(2,3);
+        sum(3,4);
+    </script>
+    <h2>Return</h2>
+    <script>
+        function sum2(left, right){
+            return left+right;
+        }
+        document.write(sum2(2,3)+'<br>')
+        document.write('<div style="color:red;">'+sum2(2,3)+'</div>');
+        document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>')
+    </script>
+    <!-- function sumColorRed(left, right){
+     document.write(left+right);
+     document.write('<div style="color:red">'+left+right+'</div><br>');
+     document.write('<div style="color:red">'+(left+right)+'</div><br>');
+
+    }
+    이렇게 하면 어떻게 출력될까요? 
+
+    답은
+
+    5
+    23 (빨강)
+    5 (빨강)
+
+    입니다. 차례대로
+    숫자 덧셈 -> 출력
+    문자로 결합 -> 출력
+    숫자 덧셈 -> 문자로 결합 -> 출력 -->
+</body>
+</html>

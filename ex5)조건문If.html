@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conditional statements</h1>
+    <h2>Program</h2>
+    <script>
+        document.write("1<br>");
+        document.write("2<br>");
+        document.write("3<br>");
+        document.write("4<br>");
+    </script>
+    <h2>IF-True</h2>
+    <script>
+        document.write("1<br>");
+        if(true){
+            document.write("2<br>");
+        }   else   {
+            document.write("3<br>");
+        }
+            document.write("4<br>");
+    </script>
+    <!-- if 조건문의 true는  else 앞의 값을, flase는 else 뒤의 값을 출력하게 함
+         즉, if()의 괄호 안에는 true나 flase를 도출하게 하는 조건문을 삽입하고
+         document.writh(~)는 그에따라 출력되고 싶은 형식을 적으면 됨 -->
+        <h2>IF-False</h2>
+        <script>
+            document.write("1<br>");
+            if(false){
+                document.write("2<br>");
+            }   else   {
+                document.write("3<br>");
+            }
+                document.write("4<br>");
+        </script>
+        <input type="button" value="night" onclick="
+        var target= document.querySelector('body');
+        if(this.value ==='night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value='day';
+            } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value='night';
+            }
+        ">
+        <input type="button" value="night" onclick="
+        var target= document.querySelector('body');
+        if(this.value ==='night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value='day';
+            } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value='night';
+            }
+        ">
+</body>
+</html>

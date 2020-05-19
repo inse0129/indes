@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- aaark 객체 -->
+    <h1>obecjt</h1>
+    <h2>Create</h2>
+    <script>
+        var aaa = {
+            "mainvocal":'nissy',
+            "subvocal":'uno'
+        };
+        document.write('mainvocal:'+aaa.mainvocal+'<br>'); 
+        document.write('subvocal:'+aaa.subvocal+'<br>'); 
+        aaa.visul='ito';
+        document.write('visul:'+aaa.visul+'<br>');
+        aaa["leader"]='naoya';
+        document.write('leader:'+aaa["leader"]+'<br>');
+    </script>
+    <!-- 위의 형식을 응용할 수 있음 for는 전체를 불러오는 명령어 -->
+    <h2>Iterate</h2>
+    <script>
+        for(var key in aaa){
+            document.write(key+'<br>');
+            document.write(key+":"+aaa[key]+'<br>')
+        }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+        // funtion music(){}과 같은 표현
+        aaa.music = function(){
+            for(var key in aaa){
+            document.write(key+":"+aaa[key]+'<br>')
+            }
+        }
+        aaa.music();
+    </script>
+</body>
+</html>
